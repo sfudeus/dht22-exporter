@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker buildx build --platform linux/arm/v7 -t sfudeus/dht22-exporter:latest --push .
+docker buildx build --platform linux/amd64 --platform linux/arm/v7 -t sfudeus/dht22-exporter:latest --push .

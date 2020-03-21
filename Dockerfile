@@ -1,13 +1,9 @@
-FROM golang:alpine AS builder
-
-ARG OS=linux
-ARG ARCH=arm
+FROM golang:1.14 AS builder
 
 WORKDIR /build
 ADD . /build
 
-RUN apk add --no-cache git
-RUN CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -o dht22-exporter .
+RUN CGO_ENABLED=0 go build -o dht22-exporter .
 
 FROM scratch
 COPY --from=builder /build/dht22-exporter /dht22-exporter
