@@ -3,7 +3,7 @@ FROM golang:1.14 AS builder
 WORKDIR /build
 ADD . /build
 
-RUN CGO_ENABLED=0 go build -o dht22-exporter .
+RUN CGO_ENABLED=0 go build cmd/dht22-exporter/dht22-exporter.go
 
 FROM scratch
 COPY --from=builder /build/dht22-exporter /dht22-exporter
