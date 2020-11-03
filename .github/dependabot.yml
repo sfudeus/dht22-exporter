@@ -1,0 +1,8 @@
+version: 2
+updates:
+  # Configuration for go
+  - package-ecosystem: "go"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
