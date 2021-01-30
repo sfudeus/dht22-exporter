@@ -10,7 +10,7 @@ jobs:
     env:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      GO_VERSION: 1.15.6
+      GO_VERSION: 1.15.7
     steps:
     - name: Checkout
       uses: actions/checkout@v2
