@@ -20,4 +20,4 @@ Help Options:
 Docker image
 ---
 
-A recent docker image (multiarch amd64,arm/v7) is automatically built for each release at sfudeus/dht22-exporter:$TAG
+A recent docker image (multiarch amd64,arm/v7) is automatically built for each release at sfudeus/dht22-exporter:$TAG.

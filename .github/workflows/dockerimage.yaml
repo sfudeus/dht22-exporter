@@ -36,5 +36,7 @@ jobs:
         platforms: linux/amd64,linux/arm/v7
         build-args: |
           GO_VERSION=${{ env.GO_VERSION }}
-        tags: "sfudeus/dht22-exporter:${{ steps.revision.outputs.target-revision }}"
+        tags: |
+          "sfudeus/dht22-exporter:${{ steps.revision.outputs.target-revision }}"
+          "sfudeus/dht22-exporter:latest"
         push: true
