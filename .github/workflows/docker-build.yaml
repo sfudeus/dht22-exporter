@@ -1,7 +1,8 @@
-name: Docker Build Image
+name: Docker Build Main
 on:
-- push
-- pull_request
+  push:
+    branches:
+    - main
 
 jobs:
   build:
