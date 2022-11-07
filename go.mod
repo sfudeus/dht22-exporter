@@ -3,7 +3,7 @@ module github.com/sfudeus/dht22-exporter
 require (
 	github.com/MichaelS11/go-dht v0.1.0
 	github.com/jessevdk/go-flags v1.5.0
-	github.com/prometheus/client_golang v1.13.0
+	github.com/prometheus/client_golang v1.13.1
 )
 
 require (
