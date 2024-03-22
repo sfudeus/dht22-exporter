@@ -30,7 +30,7 @@ jobs:
     - name: Docker build/push
       uses: docker/build-push-action@v3
       with:
-        platforms: linux/amd64,linux/arm/v7,linux/arm64
+        platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
         tags: |
           "sfudeus/dht22-exporter:${{ steps.revision.outputs.target-revision }}"
         push: true
