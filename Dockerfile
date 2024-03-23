@@ -1,11 +1,12 @@
 FROM --platform=$BUILDPLATFORM golang:1.22 AS builder
 ARG TARGETARCH
 ARG TARGETOS
+ARG TARGETPLATFORM
 
 WORKDIR /build
 ADD . /build
 
-RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build cmd/dht22-exporter/dht22-exporter.go
+RUN ./docker_compile.sh
 
 FROM scratch
 COPY --from=builder /build/dht22-exporter /dht22-exporter
