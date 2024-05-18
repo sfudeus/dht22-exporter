@@ -1,0 +1,10 @@
+name: Docker Build/Publish Release
+on:
+  push:
+    tags:
+    - "*"
+
+jobs:
+  build:
+    uses: sfudeus/workflows/.github/workflows/docker-build-publish-tag.yaml@main
+    secrets: inherit
