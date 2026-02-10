@@ -7,10 +7,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/MichaelS11/go-dht"
 	"github.com/jessevdk/go-flags"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/sfudeus/dht22-exporter/internal/gathering"
+	"github.com/sfudeus/go-dht"
 )
 
 var options struct {
@@ -20,7 +20,6 @@ var options struct {
 	MeterName string `long:"metername" description:"The name of your meter, to uniquely name them if you have multiple"`
 	Debug     bool   `long:"debug" description:"Activate debug mode"`
 }
-
 
 func main() {
 	_, err := flags.Parse(&options)
