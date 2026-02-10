@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/MichaelS11/go-dht"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com/sfudeus/go-dht"
 )
 
 var (
