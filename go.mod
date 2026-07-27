@@ -15,7 +15,7 @@ require (
 	github.com/prometheus/procfs v0.21.1 // indirect
 	golang.org/x/sys v0.47.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
-	periph.io/x/conn/v3 v3.7.2 // indirect
+	periph.io/x/conn/v3 v3.7.3 // indirect
 	periph.io/x/host/v3 v3.8.5 // indirect
 )
 
