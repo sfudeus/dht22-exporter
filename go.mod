@@ -3,7 +3,7 @@ module github.com/sfudeus/dht22-exporter
 require (
 	github.com/jessevdk/go-flags v1.6.1
 	github.com/prometheus/client_golang v1.24.1
-	github.com/sfudeus/go-dht v0.2.0
+	github.com/sfudeus/go-dht v0.2.1
 )
 
 require (
@@ -19,4 +19,4 @@ require (
 	periph.io/x/host/v3 v3.8.5 // indirect
 )
 
-go 1.25.0
+go 1.26
